@@ -1,0 +1,74 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "Ray Charles, the",
+            "target_new": "violin",
+            "ground_truth": "piano",
+            "portability": {},
+            "locality": {},
+            "subject": "Ray Charles"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {},
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "Grant Hill is a professional",
+            "target_new": "soccer",
+            "ground_truth": "basketball",
+            "portability": {},
+            "locality": {},
+            "subject": "Grant Hill"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {},
+            "portability": {}
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "The law in Ikaalinen declares the language",
+            "target_new": "Swedish",
+            "ground_truth": "Finnish",
+            "portability": {},
+            "locality": {},
+            "subject": "Ikaalinen"
+        },
+        "post": {
+            "rewrite_acc": [
+                1.0
+            ],
+            "locality": {},
+            "portability": {}
+        }
+    }
+]
