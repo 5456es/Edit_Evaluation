@@ -168,11 +168,7 @@ if __name__ == "__main__":
         save_dir = os.path.join(args.save_model_dir, args.editing_method, time.strftime("%Y-%m-%d-%H-%M-%S"))
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
-        
         ### note edit args into the save_dir
         json.dump(vars(args), open(os.path.join(save_dir, 'args.json'), 'w'), indent=4)
-
-
-        
         print(f'Saving model to {save_dir}')
         edited_model.save_pretrained(save_dir, safe_serialization=True)
