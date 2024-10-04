@@ -11,5 +11,5 @@ TOKEN='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'
 for model in models:
     print(f"Downloading {model}")
     model_name=model.split("/")[-1]
-    transformers.AutoModel.from_pretrained(model,force_download=True,use_auth_token=TOKEN).save_pretrained(f"hugging_cache/{model_name}")
-    transformers.AutoTokenizer.from_pretrained(model,force_download=True,use_auth_token=TOKEN).save_pretrained(f"hugging_cache/{model_name}")
+    transformers.AutoModel.from_pretrained(model,force_download=True,use_auth_token=TOKEN,cache_dir=f"hugging_cache/{model_name}")
+    transformers.AutoTokenizer.from_pretrained(model,force_download=True,use_auth_token=TOKEN,cache_dir=f"hugging_cache/{model_name}")

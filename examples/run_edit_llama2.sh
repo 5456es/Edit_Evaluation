@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# ROME 
-# python run_edit_llama2.py \
-#     --editing_method ROME \
-#     --hparams_dir ../hparams/ROME/llama-7b.yaml \
-#     --sequential_edit True \
-#     --data_type knowedit_r \
-#     --data_dir ../KnowEdit/benchmark/WikiBio/ \
-#     --exact_dataset wikibio-test-all.json \
-#     --ds_size 2 \
-#     --save_model_dir ../edited_models/ \
+ROME 
+python run_edit_llama2.py \
+    --editing_method ROME \
+    --hparams_dir ../hparams/ROME/llama-7b.yaml \
+    --sequential_edit True \
+    --data_type knowedit_r \
+    --data_dir ../KnowEdit/benchmark/ZsRE/ \
+    --exact_dataset ZsRE-test-all.json \
+    --ds_size 2 \
+    --save_model_dir ../edited_models/ \
 
 # MEMIT
 # python run_edit_llama2.py \
@@ -60,7 +60,7 @@
 #     --save_model_dir ../edited_models/ \
 
 
-FT llama2
+# FT llama2
 python run_edit_llama2.py \
     --editing_method FT \
     --hparams_dir ../hparams/FT/llama-7b.yaml \
@@ -71,16 +71,16 @@ python run_edit_llama2.py \
     --ds_size 2 \
     --save_model_dir ../edited_models/ \
 
-# KN gpt2-xl
-python run_edit_llama2.py \
-    --editing_method KN \
-    --hparams_dir ../hparams/KN/gpt2-xl.yaml \
-    --sequential_edit True \
-    --data_type knowedit_r \
-    --data_dir ../KnowEdit/benchmark/ZsRE/ \
-    --exact_dataset ZsRE-test-all.json \
-    --ds_size 2 \
-    --save_model_dir ../edited_models/ \
+# # KN gpt2-xl
+# python run_edit_llama2.py \
+#     --editing_method KN \
+#     --hparams_dir ../hparams/KN/gpt2-xl.yaml \
+#     --sequential_edit True \
+#     --data_type knowedit_r \
+#     --data_dir ../KnowEdit/benchmark/ZsRE/ \
+#     --exact_dataset ZsRE-test-all.json \
+#     --ds_size 2 \
+#     --save_model_dir ../edited_models/ \
 
 
 # # KN llama2
